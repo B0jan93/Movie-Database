@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Search</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="https://pluspng.com/img-png/film-reel-png-roddes-movie-and-music-reviews-5672.png" alt="">
+    <h3>MOVIE DATABASE</h3>
+  </header>
+  <nav>
+    <a href="index.html">
+      HOME
+    </a>
+    <a href="pretraga.html">
+      SEARCH
+    </a>
+    <a href="dodaj-film.html">
+      ADD MOVIE
+    </a>
+  </nav>
+  <!--dodati sortiranje po godini i po naslovu rezultata pretrage od najmanjeg do najveceg i obrtno-->
+  <div id="pretraga">
+    <form id="searchForm">
+      <input type="text" class="form-control" id="searchText" placeholder="Search Movie">
+    </form>
+    <br>
+    <label for="">SORT BY YEAR</label> <button>⇑</button> <button>⇓</button>
+    <br>
+    <label for="">SORT A-Z</label> <button>⇑</button> <button>⇓</button>
+  </div>
+  <div id="holster" class="container-fluid">
+    <div id="movies" class="row">
+
+    </div>
+  </div>
+
+  <footer id="pretraga-footer" class="page-footer font-small blue">
+
+
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+      <a href="https://github.com/B0jan93"> B0jan93 </a>
+    </div>
+
+
+  </footer >
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="http://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="main.js">
+
+  </script>
+
+</body>
+
+</html>

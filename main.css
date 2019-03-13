@@ -1,0 +1,153 @@
+body{
+  margin: 0 auto ;
+
+}
+
+#logo {
+  height: 50px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+header{
+  padding-bottom: 10px;
+  text-align: center;
+  background: darkslategray;
+  color: white;
+}
+nav{
+  text-align: center;
+  color: white;
+  background: black;
+}
+nav a{
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+}
+
+#greet{
+  background:rgb(51, 51, 68);
+  padding-left: 300px;
+  padding-top: 70px;
+  margin-bottom: 100px;
+  color: white;
+
+}
+
+#movies {
+    background: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+#photo{
+  padding-top: 20px;
+  max-height: 200px;
+  max-width: 300px;
+}
+
+#prikazi{
+  border-radius: 12px;
+  background: black;
+  color: white;
+}
+
+#more{
+  background: black;
+  color: white;
+  border:0 ;
+}
+.wraper{
+  text-align: center;
+}
+
+#slika{
+ position: relative;
+ bottom: 440px;
+ left: 635px;
+}
+
+.user{
+  padding: 10px;
+  max-width: 220px;
+  max-height: 400px;
+}
+
+input{
+  margin: 10px;
+}
+form{
+  padding-top: 20px; 
+  padding-left: 40vw;
+  padding-right: 25vw;
+}
+
+#searchForm{
+  padding-top: 20px; 
+  padding-left: 25vw;
+  padding-right: 25vw;
+
+}
+
+footer{
+  position: relative;
+  top: 301px;
+  background: black;
+  color:white;
+
+}
+
+#pretraga-footer{
+  position: relative;
+  top: 413px;
+  background: black;
+  color:white;
+}
+
+#pretraga-footer2{
+  position: relative;
+  top: 611px;
+  background: black;
+  color:white;
+}
+
+#preview{
+  height: 500px;
+  width: 350px;
+  border: 1px solid black ; 
+
+  
+}
+
+#dodaj{
+  position: relative;
+  left: 120px;
+}
+
+#prev{
+  padding-left: 46vw;
+  
+}
+
+#pretraga{
+  text-align: center;
+  border-bottom: 1px solid black;
+  background-color:  darkslategray;
+  color:white;
+}
+
+#movies img, #movie img{
+  width: 60%;
+  height: 130%;
+}
+
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 390px;
+  }
+
+  #movies .col-md-3 img{
+    height: 240px;
+  }
+}
