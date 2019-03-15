@@ -483,4 +483,4 @@ fetch(url)
         });
     });
 
-    // Izvini sto ti nisam sve prebacila na casu. M
+    // Izvini sto nisam sve prebacila na casu. M
