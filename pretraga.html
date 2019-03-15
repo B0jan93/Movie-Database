@@ -4,64 +4,42 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Search</title>
+  <title>Search movies</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 
 </head>
 
 <body>
   <header>
-    <img id="logo" src="https://pluspng.com/img-png/film-reel-png-roddes-movie-and-music-reviews-5672.png" alt="">
-    <h3>MOVIE DATABASE</h3>
+    <h1><img src="slike/ico.png" alt="2k"> Filmovi</h1>
+    <h2>Ovde možete uživati sa nama!</h2>
+    <ul class="lista">
+      <li><a href="index.html"><button>Naslovna</button></a></li>
+      <li><a href="pretraga.html"><button>Pretraga</button></a></li>
+      <li><a href="dodaj_film.html"><button>Dodaj film</button></a></li>
+      <li><a href="informacije.html"><button>Podaci</button></a></li>
+    </ul>
   </header>
-  <nav>
-    <a href="index.html">
-      HOME
-    </a>
-    <a href="pretraga.html">
-      SEARCH
-    </a>
-    <a href="dodaj-film.html">
-      ADD MOVIE
-    </a>
-  </nav>
-  <!--dodati sortiranje po godini i po naslovu rezultata pretrage od najmanjeg do najveceg i obrtno-->
-  <div id="pretraga">
-    <form id="searchForm">
-      <input type="text" class="form-control" id="searchText" placeholder="Search Movie">
-    </form>
-    <br>
-    <label for="">SORT BY YEAR</label> <button>⇑</button> <button>⇓</button>
-    <br>
-    <label for="">SORT A-Z</label> <button>⇑</button> <button>⇓</button>
-  </div>
-  <div id="holster" class="container-fluid">
-    <div id="movies" class="row">
 
-    </div>
-  </div>
+  <main>
+    <section>
 
-  <footer id="pretraga-footer" class="page-footer font-small blue">
+      <h2>Pretraga filmova</h2>
 
+      <label for="pronadji">PRETRAŽI:</label> 
+      <input type="text" placeholder="Pronađi film" id="pronadji"> 
 
-    <div class="footer-copyright text-center py-3">© 2019 Copyright:
-      <a href="https://github.com/B0jan93"> B0jan93 </a>
-    </div>
+      <p>POREDJAJ PO GODINI: <button>&#8593;</button> <button>&#8595;</button> </p>
+      <p>POREDJAJ PO NASLOVU: <button>&#8593;</button> <button>&#8595;</button> </p>
 
+    </section>
 
-  </footer >
+    <div id="filmovi"></div>
+  </main>
+  <footer>Kontakt podaci: 011/777-333</footer>
 
-
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="main.js">
-
-  </script>
-
+  <script src="js/main.js"></script>
 </body>
 
 </html>
